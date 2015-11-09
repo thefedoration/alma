@@ -54,7 +54,7 @@ a:focus {
 }
 .title-small {
   font-size: 38px;
-  color: #3f51b5;
+  color: #2980b9;
   margin-bottom: 30px;
   line-height: 50px;
 }
@@ -81,7 +81,8 @@ a:focus {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
   padding: 0!important;
-  background: #3f51b5 !important;
+  /*background: #2980b9 !important;*/
+  background:#2c3e50 !important;
 }
 .sticky-navigation .row {
   padding: 0;
@@ -133,8 +134,8 @@ a:focus {
 .show-menu .navbar.menu-wrap {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  -webkit-transition: -webkit-transform 0.8s;
-  transition: transform 0.8s;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
   -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
   transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
 }
@@ -213,7 +214,7 @@ a:focus {
   }
 }
 .hero-area {
-  background: url(../img/hero-area.jpg) no-repeat;
+  background: url(../img/why-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center bottom;
   color: #fff;
@@ -237,7 +238,7 @@ a:focus {
 }
 @media (min-width: 1200px) {
   .hero-area {
-    padding: 280px 0;
+    padding: 210px 0;
   }
   .hero-area h1 {
     font-size: 50px !important;
@@ -259,13 +260,13 @@ a:focus {
   line-height: 80px;
   border-radius: 50%;
   font-size: 36px;
-  color: #3f51b5;
+  color: #2980b9;
 }
 #features .features h4 {
   margin-bottom: 10px;
   font-size: 20px;
   font-weight: 700;
-  color: #3f51b5;
+  color: #2980b9;
 }
 #features .features .features-text {
   padding-left: 80px;
@@ -274,7 +275,7 @@ a:focus {
   margin: 0;
 }
 #why {
-  background: url(../img/why-bg.jpg);
+  background: url(../img/hero-area.jpg);
   background-size: cover;
   color: #fff;
 }
@@ -302,7 +303,7 @@ a:focus {
   padding: 48px 0;
 }
 #cta {
-  background: #3f51b5;
+  background: #2980b9;
 }
 #cta .drawer {
   float: left;
@@ -425,7 +426,7 @@ a:focus {
 }
 #other-features .features-content:hover i,
 #other-features .features-content:hover h3 {
-  color: #3f51b5;
+  color: #2980b9;
 }
 #testimonial {
   width: 100%;
@@ -481,7 +482,7 @@ a:focus {
 }
 #counter .counter-item h5 {
   text-align: center;
-  color: #3f51b5;
+  color: #2980b9;
   font-size: 16px;
   text-transform: uppercase;
   line-height: 32px;
@@ -495,7 +496,7 @@ a:focus {
 #counter .timer {
   font-size: 50px;
   font-weight: 100;
-  color: #3f51b5;
+  color: #2980b9;
   text-transform: uppercase;
   text-align: center;
   line-height: 80px;
@@ -514,7 +515,7 @@ a:focus {
 }
 #contact .info .icon i {
   font-size: 36px;
-  color: #3f51b5;
+  color: #2980b9;
 }
 #contact .info h4 {
   color: #385461;
@@ -536,7 +537,8 @@ a:focus {
 }
 #footer {
   position: relative;
-  background: #333;
+  /*background: #333;*/
+  background:#2c3e50;
 }
 #footer h3 {
   color: #fff;
