@@ -130,3 +130,12 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+
+
+ADMINS = (
+    ('Fedor Garin', 'fedor.garin@gmail.com'),
+)
+
+MANAGERS = ADMINS
+
