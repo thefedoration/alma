@@ -1,0 +1,25 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+		
+
+		<title>
+			{% block title %}alma{% endblock %}
+		</title>
+
+		{% block meta_description %}{% endblock %}
+
+		{% include 'imports.html' %}
+
+		{% block additional_headers %}{% endblock %}
+	</head>
+
+	<body>
+		{% block content %}{% endblock %}
+				
+
+		{% block additional_footers %}{% endblock %}
+	</body>
+</html>
+

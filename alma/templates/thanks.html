@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block additional_headers %}
+	<link href="/static/css/main.css" rel="stylesheet">
+  	<style>
+		.thanks{
+			background: url(/static/img/shutterstock/3.jpg) no-repeat;
+			background-size: cover;
+			background-position: center bottom;
+			color: #fff;
+			overflow: hidden;
+			position:absolute;
+
+			width:100%;
+			height:100%;
+		}
+
+		.box{
+			position:absolute;
+			height:200px;
+			width:400px;
+			
+			top:50%;
+			margin-top:-100px;
+			left:50%;
+			margin-left:-200px;
+			background:rgba(0,0,0,0.75);
+			border-radius:4px;
+			text-align:center;
+		}
+
+		.box button{
+			margin-top:10px;
+			background:#2980b9;
+			padding:10px 15px;
+			border-radius:2px;
+			color:white;
+			font-size:16px;
+			border:none;
+			cursor:pointer;
+		}
+
+	</style>
+{% endblock %}
+
+
+{% block content %}
+
+	<div class="thanks">
+		<div class="box">
+			<h1>Thanks for getting in touch!</h1>
+			<h2>We will contact you soon</h2>
+
+			<a href="/">
+				<button>go back to almify.io</button>
+			</a>
+		</div>
+	</div>
+
+{% endblock %}

@@ -5,6 +5,8 @@ body {
   font-size: 14px;
   font-weight: 400;
   background: #fff;
+  margin:0;
+
 }
 .btn {
   font-size: 14px;
@@ -214,7 +216,7 @@ a:focus {
   }
 }
 .hero-area {
-  background: url(../img/why-bg.jpg) no-repeat;
+  background: url(../img/shutterstock/3.jpg) no-repeat;
   background-size: cover;
   background-position: center bottom;
   color: #fff;
@@ -275,7 +277,7 @@ a:focus {
   margin: 0;
 }
 #why {
-  background: url(../img/hero-area.jpg);
+  background: url(../img/shutterstock/5.jpg);
   background-size: cover;
   color: #fff;
 }

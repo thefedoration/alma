@@ -1,31 +1,22 @@
-<!doctype html>
+{% extends 'base.html' %}
 
-<html lang="en">
+{% block additional_headers %}
+  <link href="/static/css/bootstrap.min.css" rel="stylesheet">
 
-  <head>  	
-  	<meta charset="utf-8">
-    <meta name="description" content="Responsive Bootstrap Landing Page Template">
-    <meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="author" content="Grayrids">
-		<title>Alma</title>
+  <link href="/static/css/material.css" rel="stylesheet">
+  <link href="/static/css/ripples.min.css" rel="stylesheet">
+  <link href="/static/css/responsive.css" rel="stylesheet">
+  <link href="/static/css/animate.min.css" rel="stylesheet">
+  <link href="/static/css/main.css" rel="stylesheet">
+{% endblock %}
 
-    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="/static/fonts/font-awesome.min.css" type="text/css" media="screen">
-    <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
-    <link href="/static/css/material.css" rel="stylesheet">
-    <link href="/static/css/ripples.min.css" rel="stylesheet">
-    <link href="/static/css/main.css" rel="stylesheet">
-    <link href="/static/css/responsive.css" rel="stylesheet">
-    <link href="/static/css/animate.min.css" rel="stylesheet">
-  </head>
 
-  <body>
+{% block content %}
+
 
     <div class="navbar navbar-invers menu-wrap">
       <div class="navbar-header text-center">
-        <a class="navbar-brand logo-right" href="javascript:void(0)"><i class="fa fa-university"></i>Alma</a>
+        <a class="navbar-brand logo-right" href="javascript:void(0)"><i class="fa fa-university"></i>Almify</a>
       </div>
         <ul class="nav navbar-nav main-navigation">
           <li class="active"><a href="#home">Home</a></li>
@@ -47,7 +38,7 @@
             <div class="navbar navbar-inverse sticky-navigation navbar-fixed-top" role="navigation" data-spy="affix" data-offset-top="200">
               <div class="container">
                 <div class="navbar-header">
-                  <a class="logo-left " href="/"><i class="fa fa-university"></i>Alma</a>
+                  <a class="logo-left " href="/"><i class="fa fa-university"></i>Almify</a>
                 </div>
                 <div class="navbar-right">
                   <button class="menu-icon" id="open-button">
@@ -58,9 +49,9 @@
             </div>
         </div>        
         <div class="contents text-right">
-          <h1 class="wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Alma - Inspire A Culture of Giving</h1>
+          <h1 class="wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Almify - Inspire A Culture of Giving</h1>
           <p class="wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms">Scalable charitable donation software built just for your needs</p>
-          <a href="#why" class="btn btn-lg btn-primary wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Interested?</a>
+          <a href="#contact" class="btn btn-lg btn-primary wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Interested?</a>
           <a href="#features" class="btn btn-lg btn-border wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">Learn More</a>
         </div>   
     </header>
@@ -81,7 +72,7 @@
               <div class="features-text">
                 <h4>Inspire A Culture of Giving</h4>
                 <p>
-                  Alma’s goal is to provide educational institutions with an interactive platform that allows for current students and recent graduates to make small donations on a rolling basis.
+                  Almify’s goal is to provide educational institutions with an interactive platform that allows for current students and recent graduates to make small donations on a rolling basis.
                 </p>
               </div>
              </div>
@@ -96,7 +87,7 @@
               <div class="features-text">
                 <h4>Easily Collect Information</h4>
                 <p>
-                  Keeping track of graduates’ contact info can be challenging. Alma allows users sign up easily online or via mobile app and provides institutions with up-to-date contact details of all users.
+                  Keeping track of graduates’ contact info can be challenging. Almify allows users sign up easily online or via mobile app and provides institutions with up-to-date contact details of all users.
                 </p>
               </div>
             </div>
@@ -110,7 +101,7 @@
               <div class="features-text">
                 <h4>Seamlessly Integrate with Current Systems</h4>
                 <p>
-                  Alma easily integrates with existing donation-based infrastructure making internal tracking and reporting on donations effortless for your Advancement Team.
+                  Almify easily integrates with existing donation-based infrastructure making internal tracking and reporting on donations effortless for your Advancement Team.
                 </p>
               </div>
             </div>
@@ -125,7 +116,7 @@
               <div class="features-text">
                 <h4>Easily Onboard New Users</h4>
                 <p>
-                  Alma makes giving easy with a very simple onboarding process for students as well as institutions.
+                  Almify makes giving easy with a very simple onboarding process for students as well as institutions.
                 </p>
               </div>
             </div>
@@ -152,9 +143,9 @@
                 <i class="mdi-hardware-phonelink"></i>
               </div>
               <div class="features-text">
-                <h4>Unlock "Alma Donations"</h4>
+                <h4>Unlock "Almify Donations"</h4>
                 <p>
-                  Alma’s goal is to help institutions inspire a culture of giving, and we’re willing to back that up with matching financial donations. Generous students, parents, alumni and faculty members can pose similar challenges to graduating classes, offering to match donations and inspiring students to reach and surpass class goals.
+                  Almify’s goal is to help institutions inspire a culture of giving, and we’re willing to back that up with matching financial donations. Generous students, parents, alumni and faculty members can pose similar challenges to graduating classes, offering to match donations and inspiring students to reach and surpass class goals.
                 </p>
               </div>
             </div>
@@ -174,15 +165,15 @@
 
           <div class="col-md-6 col-sm-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
             <div class="pull-left content">
-              <h2>Your alumni will love Alma mobile</h2>
+              <h2>Your alumni will love Almify mobile</h2>
               <p>
-              	By providing it’s users with a simple, interactive, easy-to-use platform, Alma mobile makes it easier to engage, and easier to give
+              	By providing it’s users with a simple, interactive, easy-to-use platform, Almify mobile makes it easier to engage, and easier to give
               </p>
               <ul class="list-item">
                 <li><i class="mdi-action-done"></i>Clean mobile interface</li>
                 <li><i class="mdi-action-done"></i>One tap payment</li>
                 <li><i class="mdi-action-done"></i>Push notifications enabled</li>
-                <li><i class="mdi-action-done"></i>Alma dollars available when you join with your institution’s code</li>
+                <li><i class="mdi-action-done"></i>Almify dollars available when you join with your institution’s code</li>
               </ul>
               <a href="javascript:void(0)" class="btn btn-lg btn-primary">Downoad Now!</a>
             </div>
@@ -201,7 +192,7 @@
                 Easily communicate with your alumni base
               </h3>
               <p>
-                With Alma, institutions can easily communicate with their alumni base. Send updates on upcoming events, create donation challenges, and keep touch with frequent donors.
+                With Almify, institutions can easily communicate with their alumni base. Send updates on upcoming events, create donation challenges, and keep touch with frequent donors.
               </p>
             </div>
           </div>
@@ -248,7 +239,7 @@
       <div class="container">
         <div class="row text-center">         
             <h3 class="title-small wow bounce" data-wow-duration="1000ms" data-wow-delay="300ms">Join us today and get ahead with your fundraising efforts</h3>
-             <a href="javascript:void(0)" class="btn btn-lg btn-border">Interested Now?</a>
+             <a href="#contact" class="btn btn-lg btn-border">Interested Now?</a>
           </div>
       </div>
     </section>
@@ -608,7 +599,7 @@
                     <i class="mdi-content-mail"></i>
                   </div>
                   <h4>Email</h4>
-                  <p>kyle@alma.com</p>
+                  <p>kyle@almify.com</p>
                 </div>
               </div>
               <div class="clear"></div>
@@ -627,22 +618,42 @@
                     <i class="mdi-action-thumb-up"></i>
                   </div>
                   <h4>Social Media</h4>
-                  <p>@alma</p>
+                  <p>@almify</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-md-6 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <h2 class="section-title">Hit us up, homie!</h2>
+            <h2 class="section-title">Get in touch with us</h2>
+
+            {% if form.errors %}
+                {% for field in form %}
+                    {% for error in field.errors %}
+                        <div class="alert alert-error" style="background:#e74c3c;padding: 5px 10px;margin-bottom: 5px;border-radius:2px;">
+                            <strong>{{field.name}} - {{ error|escape }}</strong>
+                        </div>
+                    {% endfor %}
+                {% endfor %}
+                {% for error in form.non_field_errors %}
+                    <div class="alert alert-error" style="background:#e74c3c;padding: 5px 10px;margin-bottom: 5px;border-radius:2px;">
+                        <strong>{{ error|escape }}</strong>
+                    </div>
+                {% endfor %}
+            {% endif %}
+
             <!-- Form -->
-            <form class="contact-form">
+            <form class="contact-form" action="/#contact" method="post" id="contact-form">
+              {% csrf_token %}
               <i class="mdi-action-account-box"></i>
               <input type="text" class="form-control" name="name" placeholder="Name">
             
               <i class="mdi-content-mail"></i>
-              <input type="email" class="form-control" name="EMAIL" placeholder="Email">                  
+              <input type="email" class="form-control" name="email" placeholder="Email">     
+
+              <i class="mdi-action-account-balance"></i>
+              <input type="text" class="form-control" name="organization" placeholder="Organization">                  
                                     
-              <textarea class="form-control" placeholder="Message" rows="4"></textarea>              
+              <textarea class="form-control" placeholder="Message" rows="4" name="description"></textarea>              
               <button type="submit" id="submit" class="btn btn-lg btn-primary">Send Massage</button>
               <div id="success" style="color:#3F51B5;">
               </div>
@@ -666,7 +677,7 @@
                 	<a href="#">College</a>
                 </li>
                 <li>
-                	<a href="#">Alma Premium</a>
+                	<a href="#">Almify Premium</a>
                 </li> 
                 <li>
                 	<a href="#">iOS App</a>
@@ -745,6 +756,15 @@
         });
     </script>
 
-  </body>
+    <!-- jumps to form if there was an error -->
+    <script>
+        $(function () {
+            {% if anchor %}
+                $(document.body).animate({
+                    'scrollTop':   $('#{{ anchor }}').offset().top
+                }, 0);
+            {% endif %}
+        });
+    </script>
 
-</html>
+{% endblock %}
