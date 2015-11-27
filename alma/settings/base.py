@@ -26,7 +26,7 @@ SECRET_KEY = 'z!pskf_$$3js2g*e4qhz2uh&ym(a_8djl!@-9f+)f(m032a%_&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
 
 
 # Application definition
