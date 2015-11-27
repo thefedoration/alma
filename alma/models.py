@@ -30,15 +30,16 @@ SIGNALS FOR CREATING LEADS
 
 @receiver(post_save, sender=Lead)
 def send_lead_email(sender, instance, created, *args, **kwargs):
+    """
+    sends email through sendgrid that someone entered info into the form
+    """
     if created:
-        print "created!!!"
-        sys.stdout.flush()
-        print instance
-        sys.stdout.flush()
 
         sg = sendgrid.SendGridClient(os.environ.get('SENDGRID_USERNAME'), os.environ.get('SENDGRID_PASSWORD'))
 
         message = sendgrid.Mail()
+        message.add_to('Kyle Larrow <larrow13@gmail.com>')
+        message.add_to('Ty Manchester Harrington <harringtonty@gmail.com>')
         message.add_to('Fedor Garin <fedor.garin@gmail.com>')
         message.set_subject('New Almify lead - %s' % instance.email)
         message.set_text('\n \
